@@ -1,5 +1,7 @@
 /* header */
 header {
+ display: grid;
+ grid-template-rows: 120px;
  border-bottom: 5px solid #000;
 }
 
