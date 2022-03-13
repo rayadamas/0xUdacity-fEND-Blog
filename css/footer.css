@@ -1,0 +1,38 @@
+/* footer */
+footer {
+ background-color: #304;
+ color: #fff;
+ margin-top: 0.5em;
+}
+
+.footer-container {
+ display: flex;
+ align-items: baseline;
+ /* positions items at baseline(lower portion) of container */
+ align-content: space-between;
+ justify-content: space-around;
+ padding: .8em;
+}
+
+/* form buttons */
+.btn {
+ padding: 6px 8px;
+ border-radius: 6px;
+ font-size: 17px;
+ background: #304;
+}
+
+.btn > a {
+ color: #fff;
+}
+
+/* email form */
+.input-file {
+ padding: 5px 8px;
+ border-radius: 3px;
+ cursor: pointer;
+ /* specifies the mouse cursor displayed when over an element */
+ text-shadow: 1px 1px #000;
+ font-weight: 700;
+ font-size: 10pt;
+}

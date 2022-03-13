@@ -1,0 +1,22 @@
+/* header */
+header {
+ border-bottom: 5px solid #000;
+}
+
+/* navigation bar */
+nav {
+ display: flex;
+ align-content: center;
+ align-items: baseline;
+ /* positions items at baseline(lower portion) of container */
+ justify-content: space-around;
+}
+
+nav-link > li {
+ /* greater than selector used to select element w specific parent
+ the children of the nav-link are the list items  */
+ padding-left: 20px;
+ text-transform: capitalize;
+ display: inline;
+ list-style: none;
+}

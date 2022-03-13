@@ -1,0 +1,176 @@
+/* imports
+import allows one to import a style sheet into another style sheet + external media queries */
+/* header */
+@import "./header.css";
+
+/* footer */
+@import "./footer.css";
+
+/* blog post */
+@import "./blog-post.css";
+
+/* font family from google */
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+/* font awesome toolkit for socials
+prefixed by `fa`, used to import icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* base page css + classes */
+* {
+ box-sizing: border-box;
+ background-color: #c70;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ color: #444;
+}
+
+.container {
+ width: 85%;
+ margin: 0 auto;
+}
+
+.blog-wrapper {
+ display: flex;
+ text-align: center;
+ font-size: 16px;
+}
+
+.img-width {
+ width: 100%;
+}
+
+.flex-item {
+ flex: 1;
+ border: 1px solid #788;
+ margin: 5px;
+ padding: 5px;
+}
+
+.date {
+ font-size: 20px;
+ margin: -2px 0 0 1px;
+ font-family: "Unica One", cursive, sans-serif;
+}
+
+.blog-post {
+ text-align: left;
+ line-height: 20px;
+ font-family: "Unica One", cursive, sans-serif;
+ font-size: 20px;
+}
+
+.read-more {
+ text-align: left;
+ line-height: 20px;
+ font-family: "Unica One", cursive, sans-serif;
+ font-size: 20px;
+}
+
+.read-more > a {
+ font-weight: 900;
+ text-decoration: underline;
+}
+
+.read-more a::after {
+ /* after selector will insert something after the content of each selected element */
+ content: "→";
+}
+
+h1,
+h2,
+h3 {
+ font-family: "Unica One", cursive, sans-serif;
+ font-weight: 900;
+ letter-spacing: 0.1em;
+ color: #a00;
+}
+
+h1 > a {
+ color: #b30;
+}
+
+a {
+ text-decoration: none;
+ color: #000;
+}
+
+a:hover {
+ /* hover selector is used to select items when hovered over by mouse */
+ color: #788;
+}
+
+p {
+ padding: 0 0 2px 0;
+ font-family: "Unica One", cursive, sans-serif;
+ font-size: 18px;
+ line-height: 28px;
+}
+
+article,
+blockquote,
+nav {
+ /* use of comma allows designation of multiple page elements that will share specifications
+ to save space */
+ font-family: "Unica One", cursive, sans-serif;
+}
+
+form {
+ display: inline;
+}
+
+li {
+ border: 1px solid #788;
+ margin: 5px;
+ padding: 0 0 2px 0;
+}
+
+/* font awesome icons */
+.fa-github {
+ color: #000;
+}
+
+.fa-twitter {
+ color: #5bf;
+}
+
+.fa-facebook {
+ color: #05f; 
+}
+
+/* media queries for mobile*/
+@media only screen and (max-width: 480px) {
+ .blog-wrapper {
+  display: block;
+ }
+
+ .blog-post-wrapper {
+  margin: 0;
+ }
+
+ .footer-container {
+  display: block;
+ }
+
+ .footer-container,
+ .date,
+ .blog-post-wrapper > h3 {
+  text-align: center;
+ }
+
+ .blog-container {
+  display: block;
+ } 
+
+ .social-link {
+  margin-bottom: 5px;
+ }
+
+ .img-post {
+  width: 85px;
+ }
+
+}
