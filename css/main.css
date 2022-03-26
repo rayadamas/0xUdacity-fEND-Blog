@@ -39,6 +39,11 @@ body {
  font-size: 16px;
 }
 
+.img-post {
+ width: 80%;
+ height: auto;
+}
+
 .img-width {
  width: 100%;
 }
@@ -170,10 +175,10 @@ li {
   margin-bottom: 5px;
  }
 
- .img-post {
+ /* .img-post {
   display: grid;
   width: 85px;
- }
+ } */
 
  .column-1 {
   display: block;
